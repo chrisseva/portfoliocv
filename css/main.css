@@ -1,0 +1,232 @@
+body {
+  height: 100%;
+  background-color: white;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.banner-background{
+	/*background: url('../img/background2.png');*/
+	color: #fff;
+	background-color: #333;
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.avatar{
+	width: 20%;
+}
+/*for centering image and text note: need text-center class*/
+.banner{
+	position: relative;
+	top: 20%;
+}
+
+.aniava{
+	animation-name: sample;
+	animation-duration: 2s;
+}
+
+.hr1{
+	width: 40%;
+	animation-name: lineone;
+	animation-duration: 2s;
+}
+.hr2{
+	width: 10%;
+	animation-name: linetwo;
+	animation-duration: 2s;
+}
+
+.banner-100{
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.navbar{
+	background-color: #333;
+	display:flex;
+	justify-content: center;
+
+}
+.navbar-inverse{
+	background-color: rgba(91, 92, 94, 0.5);
+}
+
+.active{
+	background-color: rgba(43, 43, 45, 0.);	
+}
+
+.container{
+	margin-top: 5%;
+}
+
+/*hover effect*/
+.hover10{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.hover10:before, .hover10:after, .hover10__label:before, .hover10__label:after{
+  content: "";
+  position: absolute;
+  transition-property: transform;
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+}
+
+.hover10:before, .hover10:after{
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.hover10:before{
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+  transition-delay: .25s;
+}
+
+.hover10:after{
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+  transition-delay: .05s;
+}
+
+.hover10__label:before, .hover10__label:after{
+  width: 2px;
+  height: 100%;
+  top: 0;
+}
+
+.hover10__label:before{
+  left: 0;
+  transform: translate3d(0, 105%, 0);
+}
+
+.hover10__label:after{
+  right: 0;
+  transform: translate3d(0, -105%, 0);
+  transition-delay: .15s;
+}
+
+.hover10:hover:before, .hover10:hover:after,
+.hover10:hover .hover10__label:before, .hover10:hover .hover10__label:after,
+.hover10:focus:before, .hover10:focus:after,
+.hover10:focus .hover10__label:before, .hover10:focus .hover10__label:after{
+  transform: translate3d(0, 0, 0);
+  transition-duration: .2s;
+}
+
+.hover10:hover:before, .hover10:focus:before{
+  transition-delay: 0s;
+}
+
+.hover10:hover:after, .hover10:focus:after{
+  transition-delay: .4s;
+}
+
+.hover10:hover .hover10__label:after, .hover10:focus .hover10__label:after{
+  transition-delay: .2s;
+}
+
+.hover10:hover .hover10__label:before, .hover10:focus .hover10__label:before{
+  transition-delay: .6s;
+}
+.hover10:focus{
+	outline: none;
+}
+.hover10:hover, .hover10:focus{
+	color: white;
+	text-decoration: none;
+}
+
+.hover10:before,
+.hover10:after, .hover10__label:before,
+.hover10__label:after{
+	background-color: white;
+}
+
+.hover10{
+	padding: .5rem 1.5rem;
+}
+
+a{
+	color: white;
+}
+/*end of effect*/
+
+.hr1{
+	width: 40%;
+	animation-name: lineone;
+	animation-duration: 2s;
+}
+.hr2{
+	width: 10%;
+	animation-name: linetwo;
+	animation-duration: 2s;
+}
+
+@keyframes lineone{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 40%;
+	}
+}
+@keyframes linetwo{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 10%;
+	}
+}
+@keyframes sample{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+ul{
+	font-family:"Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+li a {
+  margin-righ:20px;
+  text-decoration:none;
+  color:#999;
+  transition:all 0.5s;
+  -webkit-transition:all 0.5s;
+  -moz-transition:all 0.5s;
+}
+
+li a i {
+  display:block;
+  padding:10px 0 0 0;
+  border-top:5px solid #000;
+  /*text-decoration: underline;*/
+  width:0;
+  transition:all 0.5s;
+  -webkit-transition:all 0.5s;
+  -moz-transition:all 0.5s;
+}
+
+li a:hover {
+  color:#000;
+}
+
+li a:hover i {
+  width:100%;
+  border-top:2px solid #666;
+}

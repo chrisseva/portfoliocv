@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Potfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+	<!-- navbar -->
+	<div class="row">
+		<div class="col-md-12">
+        <nav class="navbar navbar-fixed-top nav-color">
+            <ul class="nav navbar-nav">
+                <li><a href="#start">Start</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>       
+        </nav>
+    	</div>
+    </div>
+	<div class="banner-background" id="start">
+		<div class="banner text-center">
+			<div class="aniava">
+				<img class="avatar" src="img/avatar.png" alt="avatar">
+			</div>
+			<hr class="hr1">
+			<h1>Chris Seva</h1>
+			<h4 style="color:grey;">Back-End Developer</h4>
+			<div class="text-center social-icons">
+				<a href="https://twitter.com">
+					<i class="fa fa-twitter" style="font-size: 30px; margin: 10px"></i>
+				</a>
+				<a href="https://www.google.com">
+					<i class="fa fa-linkedin" style="font-size: 30px; margin: 10px"></i>
+				</a>
+				<a href="https://www.facebook.com/xris.seva">
+					<i class="fa fa-facebook" style="font-size: 30px; margin: 10px"></i>
+				</a>
+				<a href="https://github.com/chrisseva">
+					<i class="fa fa-github" style="font-size: 30px; margin: 10px"></i>					
+				</a>
+			</div>
+			<div style="margin-top: 15px;">
+				<div class="menu__item">
+    				<a href="#resume" class="menu__link hover10">
+    					<span class="menu__label hover10__label">Check my Resume</span>
+    				</a>
+					<a href="#portfolio" class="menu__link hover10">
+						<span class="menu__label hover10__label">Check my Work</span>
+					</a>
+  				</div>	
+			</div>
+		</div>
+	</div>
+	<span id="about"></span>
+	<!-- About -->
+	<section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">About Me</h2>
+
+        <div class="row">
+
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <!-- <img src="assets/images/myphoto.jpg" alt=""> -->
+              </div>
+              <ul>
+                <li><strong>Name:</strong> Chris Seva</li>
+                <li><strong>Date of birth:</strong> August 4, 1990</li>
+                <li><strong>Address:</strong> Binangonan Rizal, PH</li>
+                <li><strong>Phone:</strong> 0915650xxxx</li>
+                <li><strong>Email:</strong> chrisseva04@gmail.com</li>
+              </ul>
+            </div>
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Me?</h3>
+              <p>Hi, I'm Chris and I'm an aspiring Web Developer currenlty <br> doing bootcamp in TUITT</p>
+            </div>
+
+          </div>
+
+
+        </div> <!-- /row -->
+      </div> <!-- /container -->
+    </section><!-- /About Section -->
+
+
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">2009-2013</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>BS Information Technology</h3>
+                                            <span>STI Ortigas-Cainta</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2003-2007</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Angono Private High School</h3>
+                                            <span>Angono Rizal</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">1997-2003</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>DES</h3>
+                                            <span>Darangan Binangonan Rizal</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2014-2017</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Data Analyst</h3>
+                                            <span>Accenture, 1880 Bldg Eastwood Libis QC</span>
+                                        </div><!-- /timeline-heading -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>                         
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section --> 
+    
+
+        
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>HTML5</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" ><span>89%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>CSS</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" ><span>65%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Javascript</h3></div>  
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>70%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>JQuery</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><span>60%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>PHP</h3></div> 
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Laravel</h3></div>  
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" ><span>67%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row --> 
+            
+
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Works</h2>
+
+        
+
+        <div class="row">
+          <div id="grid">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "interface"]'>
+              <div class="portfolio-bg">
+              <a href="https://chrisseva.github.io/b5dc-csp1-gamersguide/" target="_blank">
+                <img src="img/csp1.png" height="250px" width="250px">
+                <h3>Heroes and Lore</h3>
+               </a>
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "interface"]'>
+              <div class="portfolio-bg">
+              <a href="https://redcloudvaping.000webhostapp.com/" target="_blank">
+                <img src="img/csp2.png" height="250px" width="250px">
+                <h3>Red Cloud Vaping</h3>
+               </a>
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            
+          </div><!-- /#grid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Works Section -->
+    
+	
+
+
+
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
